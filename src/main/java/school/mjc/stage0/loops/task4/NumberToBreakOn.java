@@ -1,6 +1,6 @@
 public class NumberToBreakOn {
     
-    public void printNumbersUntilWithBreakOn(int toBreakWith, int numberToGoUntil) {
+   public void printNumbersUntilWithBreakOn(int toBreakWith, int numberToGoUntil) {
         
         boolean isPositiveNumberToGoUntil = numberToGoUntil < 0 ? false : true;
         boolean isPositiveToBreakWith = toBreakWith < 0 ? false : true;
@@ -23,7 +23,7 @@ public class NumberToBreakOn {
         
         if(isIteratingTillTheEnd){ System.out.println("iterating till the end");}
         
-        int i = 0;
+        int i = 1;
         boolean isCheck = true;
         do{
             System.out.println(i);
@@ -35,7 +35,10 @@ public class NumberToBreakOn {
                 isCheck = (i > (isIteratingTillTheEnd ? numberToGoUntil: toBreakWith));
                 i--;
             }
-            //System.out.println(isCheck);
+            
+            //break;
+            //int i = 1; i <= numberToGoUntil; i++
+            
         }while(isCheck); 
     }
     
